@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <title>Contact</title>
+</head>
+<body>
+   <header class="navbar">
+      <div class="container">
+         <a href="#" class="logo">THUNDER BOLT XI</a>
+         <nav>
+            <ul class="nav-menu">
+               <li ><a href="index.html">Home</a></li>
+               <li><a href="matches.html">Matches</a></li>
+               <li><a href="playerL.html">Players</a></li>
+               <li><a href="membership.html">Membership</a></li>
+               <li class="active"><a href="#">Contact</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+    <style>
+ /* Navbar styles */
+ body{
+   background-color: aliceblue;
+ }
+.navbar {
+   background-color: rgba(255, 255, 255, 0.8); /* White with blur effect */
+   padding: 20px 0;
+   
+   width: 100%;
+   z-index: 1000;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.logo {
+   color: #000; /* Black */
+   font-size: 24px;
+   text-decoration: none;
+   font-family: 'Poppins', sans-serif; /* Poppins font family */
+}
+
+.nav-menu {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+}
+
+.nav-menu li {
+   margin-right: 20px;
+}
+
+.nav-menu li a {
+   color: #000; /* Black */
+   text-decoration: none;
+   transition: color 0.3s ease-in-out;
+   font-size: 18px;
+   padding: 10px;
+   border-radius: 5px;
+   font-family: 'Poppins', sans-serif; /* Poppins font family */
+}
+
+.nav-menu li a:hover {
+   color: #007bff; /* Blue */
+   border-bottom: 2px solid #007bff; /* Blue underline */
+   transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+/* Active page effect */
+.nav-menu li.active a {
+   color: #007bff; /* Green glow for active page */
+   text-shadow: 0 0 5px #007bff;
+   transition: text-shadow 0.3s ease-in-out;
+}
+li.active{
+   color: transparent; /* Make the text transparent */
+    text-shadow: 0 0 10px #007bff; /* Add a green glow effect */
+}
+
+    </style>
+     <h1>Contact Us</h1>
+     <form id="contact-form">
+         <label for="name">Name:</label>
+         <input type="text" id="name" name="name" required><br>
+ 
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" required><br>
+ 
+         <label for="message">Message:</label><br>
+         <textarea id="message" name="message" rows="4" required></textarea><br>
+ 
+         <button type="submit">Send Message</button>
+     </form>
+ 
+  <style>
+ body {
+    font-family: Arial, sans-serif;
+    
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #f2f2f2;
+}
+
+form {
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+  </style>
+  <script>
+  const form = document.getElementById('contact-form');
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+  
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    const subject = encodeURIComponent(`Message from ${name}`);
+    const body = encodeURIComponent(`Email: ${email}\n\nMessage: ${message}`);
+
+    const mailtoLink = `mailto:gaminggreenpro@gmail.com?subject=${subject}&body=${body}`;
+
+    window.location.href = mailtoLink;
+});
+
+
+  </script>
+  <div class="faq-section">
+   <h2>Frequently Asked Questions</h2>
+   <div class="faq">
+      <h3>What are the team's practice hours?</h3>
+      <p>Our team practices every weekday from 4:00 PM to 6:00 PM at the local cricket ground. Additional practice sessions may be scheduled during weekends depending on match schedules.</p>
+   </div>
+   <div class="faq">
+      <h3>How can I join the team?</h3>
+      <p>To join Thunder Bolt XI, you can fill out the membership form available on our website or contact our team manager directly. Please note that membership openings may vary depending on team requirements.</p>
+   </div>
+   <div class="faq">
+      <h3>Where can I find information about upcoming matches?</h3>
+      <p>You can find information about upcoming matches on our Matches page. We regularly update the schedule with match dates, timings, and venues.</p>
+   </div>
+   <!-- Add more FAQs as needed -->
+   <div class="faq">
+      <h3>How and where can I play my first match?</h3>
+      <p>You can play your first match by becoming a member of our team first! Then in out home league(TBL), you can have your first match.</p>
+   </div>
+</div>
+
+<style>
+   .faq-section {
+   padding: 20px;
+}
+
+.faq {
+   margin-bottom: 20px;
+}
+
+.faq h3 {
+   font-size: 18px;
+   font-weight: bold;
+   margin-bottom: 10px;
+}
+
+.faq p {
+   font-size: 16px;
+   line-height: 1.5;
+}
+
+/* Hover effect */
+.faq:hover {
+   box-shadow: 0 0 20px rgba(0, 123, 255, 0.7); /* Blue glow effect */
+   transition: box-shadow 0.3s ease-in-out;
+}
+
+</style>
+</body>
+</html>

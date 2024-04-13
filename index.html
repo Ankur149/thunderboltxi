@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <title>Home</title>
+</head>
+<body>
+   <header class="navbar">
+      <div class="container">
+         <a href="#" class="logo">THUNDER BOLT XI</a>
+         <nav>
+            <ul class="nav-menu">
+               <li class="active"><a href="#">Home</a></li>
+               <li><a href="matches.html">Matches</a></li>
+               <li><a href="playerL.html">Players</a></li>
+               <li><a href="membership.html">Membership</a></li>
+               <li><a href="contact.html">Contact</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+    <style>
+ /* Navbar styles */
+ body{
+   background-color: aliceblue;
+ }
+.navbar {
+   background-color: rgba(255, 255, 255, 0.8); /* White with blur effect */
+   padding: 20px 0;
+   
+   width: 100%;
+   z-index: 1000;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.logo {
+   color: #000; /* Black */
+   font-size: 24px;
+   text-decoration: none;
+   font-family: 'Poppins', sans-serif; /* Poppins font family */
+}
+
+.nav-menu {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+}
+
+.nav-menu li {
+   margin-right: 20px;
+}
+
+.nav-menu li a {
+   color: #000; /* Black */
+   text-decoration: none;
+   transition: color 0.3s ease-in-out;
+   font-size: 18px;
+   padding: 10px;
+   border-radius: 5px;
+   font-family: 'Poppins', sans-serif; /* Poppins font family */
+}
+
+.nav-menu li a:hover {
+   color: #007bff; /* Blue */
+   border-bottom: 2px solid #007bff; /* Blue underline */
+   transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+/* Active page effect */
+.nav-menu li.active a {
+   color: #007bff; /* Green glow for active page */
+   text-shadow: 0 0 5px #007bff;
+   transition: text-shadow 0.3s ease-in-out;
+}
+li.active{
+   color: transparent; /* Make the text transparent */
+    text-shadow: 0 0 10px #007bff; /* Add a green glow effect */
+}
+
+    </style>
+<h1>Featured Players:</h1>
+<section class="featured-player">
+   <div class="player-info">
+     <!-- Player Image -->
+     <img src="ratin.jpg" alt="Player Image" class="player-img">
+     
+     <!-- Player Stats -->
+     <div class="player-stats">
+       <div class="stat-box">
+         <h3>Matches Played</h3>
+         <p>5</p>
+       </div>
+       <div class="stat-box">
+         <h3>Total Runs</h3>
+         <p>188</p>
+       </div>
+       <div class="stat-box">
+         <h3>Highest Run</h3>
+         <p>73</p>
+       </div>
+       <div class="stat-box">
+         <h3>Strike Rate</h3>
+         <p>144.02</p>
+       </div>
+       <div class="stat-box">
+         <h3>Wickets</h3>
+         <p>3 wickets for 38 runs</p>
+       </div>
+     </div>
+   </div>
+ </section>
+<style>
+   h1{
+      text-align: center;
+   }
+   .featured-player {
+  background-color: rgba(255, 255, 255, 0.8); /* White with blur effect */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.player-info {
+  display: flex;
+  align-items: center;
+}
+
+.player-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.player-stats {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  width: calc(20% - 20px);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.stat-box:last-child {
+  margin-right: 0;
+}
+
+.stat-box h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.stat-box p {
+  font-size: 14px;
+  color: #555;
+}
+
+</style> 
+<section class="image-box">
+   <div class="image-container">
+     <!-- You can put your image here -->
+     <img src="field.png" alt="Field Image">
+   </div>
+ </section>
+<style>
+   .image-box {
+  text-align: center;
+  margin-top: 40px; /* Adjust as needed */
+}
+
+.image-container {
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+</style> 
+<section class="image-description">
+   <div class="description-container">
+     <h2>Description</h2>
+     <p>This is a description of the Field's Image. In this picture, there are 6 and 4 runs on the both Leg-Side and Off-Side. But from behind the stumps to the wall there is just 2 runs.</p>
+   </div>
+ </section>
+<style>
+   .image-description {
+  text-align: center;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.description-container {
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+.description-container h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.description-container p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+</style> 
+<section class="rules-section">
+   <div class="rules-container">
+     <h2>Rules</h2>
+     <ul>
+       <li>Rule 1: No Ball For Overstepping(Common), But we highly check the chuking, Don't forget to avoid that!</li>
+       <li>Rule 2: If the leg umpire says its run out, it is run out! </li>
+       <li>Rule 3: Everytype of wicket is allowed, EXCEPT LBW!</li>
+       <!-- Add more rules as needed -->
+     </ul>
+   </div>
+ </section>
+ <style>
+  .rules-section {
+    width: 200px;
+    padding: 20px;
+    border: 2px solid #1e90ff; /* Stylish outline */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  }
+
+.rules-section h2 {
+    margin-bottom: 10px;
+    color: #1e90ff; /* Blue color */
+  }
+
+  .rules-section ul {
+    margin-bottom: 20px;
+  }
+
+  .rules-section li {
+    display: block;
+    margin-bottom: 10px;
+    color: #1e90ff; /* Blue color */
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .rules-section li:hover {
+    color: #007bff; /* Darker blue color on hover */
+  }
+
+ </style>
+
+ <div class="prompt-box">
+  <h2>Welcome!</h2>
+  <p>We're glad you're here.Please visit our other Pages!</p>
+  <a >Contact</a>
+  <a >Membership</a>
+  <a >Matches</a>
+  <a >Players</a>
+</div>
+<style>
+  .prompt-box {
+    width: 200px;
+    padding: 20px;
+    border: 2px solid #1e90ff; /* Stylish outline */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  }
+
+  .prompt-box h2 {
+    margin-bottom: 10px;
+    color: #1e90ff; /* Blue color */
+  }
+
+  .prompt-box p {
+    margin-bottom: 20px;
+  }
+
+  .prompt-box a {
+    display: block;
+    margin-bottom: 10px;
+    color: #1e90ff; /* Blue color */
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .prompt-box a:hover {
+    color: #007bff; /* Darker blue color on hover */
+  }
+</style>
+
+</body>
+</html>
